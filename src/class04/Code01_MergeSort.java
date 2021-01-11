@@ -1,5 +1,7 @@
 package class04;
 
+import java.util.Arrays;
+
 public class Code01_MergeSort {
 
 	// 递归方法实现
@@ -126,14 +128,15 @@ public class Code01_MergeSort {
 	// for test
 	public static void main(String[] args) {
 		int testTime = 500000;
-		int maxSize = 100;
+		int maxSize = 8;
 		int maxValue = 100;
 		System.out.println("测试开始");
 		for (int i = 0; i < testTime; i++) {
 			int[] arr1 = generateRandomArray(maxSize, maxValue);
 			int[] arr2 = copyArray(arr1);
 			mergeSort1(arr1);
-			mergeSort2(arr2);
+			//mergeSort2(arr2);
+			Code01_MergeSort_lc.mergeSort2(arr2);
 			if (!isEqual(arr1, arr2)) {
 				System.out.println("出错了！");
 				printArray(arr1);
