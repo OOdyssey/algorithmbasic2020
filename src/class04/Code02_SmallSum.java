@@ -118,13 +118,19 @@ public class Code02_SmallSum {
 	// for test
 	public static void main(String[] args) {
 		int testTime = 500000;
-		int maxSize = 100;
+		int maxSize = 8;
 		int maxValue = 100;
 		boolean succeed = true;
 		for (int i = 0; i < testTime; i++) {
 			int[] arr1 = generateRandomArray(maxSize, maxValue);
 			int[] arr2 = copyArray(arr1);
-			if (smallSum(arr1) != comparator(arr2)) {
+//			if (smallSum(arr1) != comparator(arr2)) {
+//				succeed = false;
+//				printArray(arr1);
+//				printArray(arr2);
+//				break;
+//			}
+			if (Code02_SmallSum_lc.smallSum(arr1) != comparator(arr2)) {
 				succeed = false;
 				printArray(arr1);
 				printArray(arr2);

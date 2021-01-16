@@ -117,12 +117,18 @@ public class Code03_ReversePair {
 		for (int i = 0; i < testTime; i++) {
 			int[] arr1 = generateRandomArray(maxSize, maxValue);
 			int[] arr2 = copyArray(arr1);
-			if (reverPairNumber(arr1) != comparator(arr2)) {
+			if (Code03_ReversePair_lc.reverPairNumberNonRecursion(arr1) != comparator(arr2)) {
 				System.out.println("Oops!");
 				printArray(arr1);
 				printArray(arr2);
 				break;
 			}
+//			if (reverPairNumber(arr1) != comparator(arr2)) {
+//				System.out.println("Oops!");
+//				printArray(arr1);
+//				printArray(arr2);
+//				break;
+//			}
 		}
 		System.out.println("测试结束");
 	}

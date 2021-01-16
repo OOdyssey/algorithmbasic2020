@@ -136,7 +136,10 @@ public class Code01_MergeSort {
 			int[] arr2 = copyArray(arr1);
 			mergeSort1(arr1);
 			//mergeSort2(arr2);
-			Code01_MergeSort_lc.mergeSort2(arr2);
+//			Code01_MergeSort_lc.mergeSort1(arr2);
+//			Code02_SmallSum_lc.smallSum(arr2);
+//			Code02_SmallSum_lc.smallSumNonRecursion(arr2);
+			Code03_ReversePair_lc.reverPairNumberNonRecursion(arr2);
 			if (!isEqual(arr1, arr2)) {
 				System.out.println("出错了！");
 				printArray(arr1);
